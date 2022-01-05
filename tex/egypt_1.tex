@@ -1,11 +1,8 @@
 \documentclass[a4paper]{article}
-%% \usepackage{pdflscape}
-\usepackage{layout}
 \setlength\marginparwidth{0in}
 \setlength\marginparsep{0in}
 \usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
-\usepackage[sc, big, raggedleft]{titlesec}
-\titleformat*{\section}{\raggedleft\scshape\huge}
+\usepackage{graphicx}
 \usepackage{lipsum}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -13,14 +10,17 @@
 \renewcommand{\headrulewidth}{0pt}
 \fancyfoot[RO]{\footnotesize \sc From the Mahatma Gandhi Centennial Collection of Ramakant D.\ Bhat-Upponi (1927--1996)}
 \begin{document}
-%% \begin{landscape}
-  \hrule
-\section*{Egypt {\small (Formerly United Arab Rebpublic)}}
+\hrule
+\vspace{8pt}
+\begin{minipage}{2cm}
+  \includegraphics[height=1.2cm]{images/eg}
+\end{minipage}
+\hfill
+{\scshape\huge Egypt {\small (Formerly United Arab Rebpublic)}}
 \vspace{8pt}
 \hrule
 \vspace{12cm}
 \hfill
-%% \begin{center}
 \begin{minipage}{6cm}
   \hrule \vspace{12pt} Stamp and First Day Cover issued in Cairo,
   United Arab Republic (a union of Egypt and Syria until Syria
@@ -31,8 +31,4 @@
   the Cover and the stamp but later corrected on the Postal
   Cancellation Mark seen on the First Day Cover
 \end{minipage}
-%% \end{center}
-
-% \lipsum[1-9]
-%% \end{landscape}
 \end{document}
